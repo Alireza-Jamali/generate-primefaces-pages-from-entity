@@ -122,14 +122,15 @@ public class ${controllerClassName} implements Serializable {
 	}
 	
 	private void findFetchSelected${entityClassName}() {
-//		if(selected${entityClassName} == null || selected${entityClassName}.getId() == null) {
-//            return;
-//        }
-//        selected${entityClassName} = ${ejbClassName?uncap_first}.findFetch(selected${entityClassName}.getId(), fetch -> {
-//            if(fetch.getTODO() != null) {
-//                fetch.getTODO().size();
-//            }
-//        });
+		if(selected${entityClassName} == null || selected${entityClassName}.getId() == null) {
+		    selected${entityClassName} = null;
+            return;
+        }
+        selected${entityClassName} = ${ejbClassName?uncap_first}.findFetch(selected${entityClassName}.getId(), fetch -> {
+            if(fetch.getTODO() != null) {
+                fetch.getTODO().size();
+            }
+        });
 	}
 	
 	public void prepareSimilarCreate() {

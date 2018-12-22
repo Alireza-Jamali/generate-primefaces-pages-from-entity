@@ -138,9 +138,9 @@
 									 title="${r"#{"}${bundle}.saveAndCreate${r"}"}"
 									 update="${entityName}_editForm :${entityName}_listForm:${entityName}_listForm_dataTable" />
 						<p:commandButton actionListener="${r"#{"}${managedBean}${r".cancel}"}"
-									 styleClass="editForm-btns" immediate="true" icon="ui-icon-cancel"
-									 title="${r"#{"}${bundle}.cancel${r"}"}"
-									 update="${entityName}_editForm :${entityName}_listForm:${entityName}_listForm_dataTable" />
+									 styleClass="editForm-btns" process="@this" icon="ui-icon-cancel"
+									 title="${r"#{"}${bundle}.cancel${r"}"}"  
+									 update="${entityName}_editForm :${entityName}_listForm:${entityName}_listForm_dataTable:${entityName}_listForm_btnsPanel/>
 					</p:outputPanel>
             </h:panelGroup>
         </h:form>
