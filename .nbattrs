@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="JsfUtil.ftl">
+        <attr name="template" boolvalue="true"/>
+    </fileobject>
+    <fileobject name="bundle.ftl">
+        <attr name="template" boolvalue="true"/>
+    </fileobject>
+    <fileobject name="controller.ftl">
+        <attr name="template" boolvalue="true"/>
+    </fileobject>   
+	<fileobject name="converter.ftl">
+        <attr name="template" boolvalue="true"/>
+    </fileobject>
+    <fileobject name="jsfcrud.css">
+        <attr name="template" boolvalue="true"/>
+    </fileobject>
+    <fileobject name="jsfcrud.js">
+        <attr name="template" boolvalue="true"/>
+    </fileobject>
+    <fileobject name="list.ftl">
+        <attr name="template" boolvalue="true"/>
+    </fileobject>
+</attributes>
